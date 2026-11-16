@@ -1,10 +1,23 @@
-# Quiz 1 Blueprint & Proof Checklist (HW 01 – HW 04)
+# Quiz 1 Blueprint & Proof Checklist (Lectures, Recitations & HW 01 – 04)
 
 This blueprint outlines the exact structural patterns, typical trap conditions, and rigorous proof standards expected for **Quiz 1** in Dr. Arnold Filtser's Discrete Structures course.
 
+## 📋 Official Quiz 1 Structure (90 Minutes, 100 Points)
+- **Part A — 5 Multiple-Choice Questions (שאלות אמריקאיות, 15 pts each = 75 pts):**
+  - 5–6 options per question with **strictly one correct answer** (Dr. Filtser style, often including *"אף אחת מהתשובות אינה נכונה"*).
+  - Covers Lectures 1–4, Recitations 1–4, and Exercises 1–4:
+    1. **Relations & Posets:** Properties of relations (reflexive, symmetric, antisymmetric, transitive), counting relations/equivalence classes, minimal/maximal vs. minimum/maximum elements, lexicographic order properties.
+    2. **Graph Foundations & Degrees:** Handshaking lemma, degree sequences, complement graph $\overline{G}$ connectivity and diameter bounds ($\operatorname{diam}(\overline{G})$), induced vs. spanning subgraphs.
+    3. **Trees & Bipartite Graphs:** Counting leaves given degree sequences, tree characterizations ($|E| = |V| - 1$), tree centers (Jordan's theorem), bipartite graph characterizations (odd cycles / closed walks).
+    4. **Cardinality ($\aleph_0, \aleph, 2^\aleph$):** Determining exact cardinalities of intricate sets (e.g., $\{S \subseteq \mathbb{N} \mid X \Delta S \text{ is finite}\}$, bijections/injections from $\mathbb{N} \to \mathbb{N}$, equivalences with $\mathcal{P}(\mathbb{N})$).
+- **Part B — 1 Open Proof Question (שאלה פתוחה, 25 pts):**
+  - Directly based on (or a close parameterized variation of) a problem from **Homework 1–4**.
+  - May be a single 25-point proof or split into two sub-parts (e.g., 12 + 13 points).
+  - Supports the 20% *"לא יודעים"* policy on the full open question or a full sub-part.
+
 ---
 
-## 🏛️ Question 1: Order Theory & Equivalence Relations (HW 01)
+## 🏛️ Topic 1: Order Theory & Equivalence Relations (HW 01)
 
 ### Common Exam Patterns:
 1. **Lexicographic Orders on $A^k$:**

@@ -26,9 +26,11 @@ The course material is strictly mapped into **3 Quiz Tiers**, each spanning appr
 When the student initiates a conversation, offer or support four primary modes:
 
 1. **Full Quiz Simulation (מבחן סימולציה לבוחן אמצע):**
-   - Synthesizes an authentic 3-question quiz (34 points each, total 102 points with bonus, matching real BIU quizzes).
-   - Tailored to a specific quiz tier (Quiz 1: HW 01–04; Quiz 2: HW 05–08; Quiz 3: HW 09–13).
-   - Duration: 75–90 minutes. Includes Dr. Filtser's 20% "לא יודע" policy.
+   - Synthesizes an authentic BIU quiz matching the official 2026/2027 course format:
+     - **Part A — 5 Multiple-Choice Questions (שאלות אמריקאיות):** 15 points each (75 points total). Each question has 5–6 options with **strictly 1 correct answer** (often including subtle traps or *"אף אחת מהתשובות אינה נכונה"*), testing Lectures & Recitations 1–4 (or 5–8 / 9–13).
+     - **Part B — 1 Open Proof Question (שאלה פתוחה):** 25 points (total 100 points). Directly based on or closely adapted from the tier's Homework exercises (HW 01–04 for Quiz 1; HW 05–08 for Quiz 2; HW 09–13 for Quiz 3).
+   - Tailored to a specific quiz tier (Quiz 1: Lectures/Recitations/HW 01–04; Quiz 2: 05–08; Quiz 3: 09–13).
+   - Duration: 90 minutes (שעה וחצי). Includes Dr. Filtser's 20% "לא יודעים" policy (applies to the open question only; cannot be used on multiple-choice questions).
 2. **Comprehensive Final Exam Simulation (מבחן גמר סמסטריאלי מועד א'/ב'):**
    - Synthesizes a full-length, comprehensive final exam spanning the entire syllabus (HW 01 through HW 13).
    - Structure: 4 to 5 in-depth multi-part proof problems (20–25 points each, total 100 points).
@@ -38,7 +40,7 @@ When the student initiates a conversation, offer or support four primary modes:
    - Focuses intensively on specific homework assignments (e.g., *"Drill me on HW 03 and HW 04"*).
    - Uses parameterized mutations of tricky problem types (e.g., finding bijections, CSB sandwiches, leaf induction, complement graph diameters).
 4. **Past Exam / Quiz Reproduction (שחזור בחני ומבחני עבר):**
-   - Pulls directly from the archived scans in `Past_Exams/Quizzes/` or `Past_Exams/Final_Exams/` with exact historical scoring rubrics.
+   - Pulls directly from the archived scans in `Past_Exams/Quizzes/`, `Past_Exams/Final_Exams/`, or homework sets in `Past_Exams/Homeworks/` with exact historical scoring rubrics.
 
 ---
 
@@ -52,10 +54,13 @@ To maintain clean practice records without cluttering the chat window, **always 
 2. **Write Question File (`Questions.md`):**
    Write the problem statement, point distribution, formal assumptions, and clear formatting in `Questions.md`.
 3. **Write Answer Template (`Answers_Template.md`):**
-   Write an answer sheet with clear headers for each question/part, providing empty response placeholders:
+   Write an answer sheet with clear headers for Part A (5 multiple-choice questions) and Part B (1 open proof question), providing empty response placeholders:
    ```markdown
-   ### Question 1 (34 Points)
-   *Write your formal proof here (use LaTeX notation):*
+   ## חלק א': שאלות אמריקאיות (75 נקודות — 15 נקודות לכל שאלה)
+   - **שאלה 1:** [כתוב כאן את מספר התשובה הנכונה: 1–6]
+   ...
+   ## חלק ב': שאלה פתוחה (25 נקודות)
+   *כתוב כאן את ההוכחה הפורמלית (ניתן להשתמש ב-LaTeX):*
    ```
 4. **Write Hidden Solution File (`Solutions.md`):**
    Write the rigorous, complete step-by-step mathematical solution in `Solutions.md`.

@@ -3,8 +3,8 @@
 
 **Lecturer:** Dr. Arnold Filtser  
 **Course:** Discrete Structures (מבנים בדידים) — 89-2197  
-**Exam Policy:** 3 Term Quizzes ($\approx$ 4 Homeworks / 4 Weeks each) + Final Exam (Moed A / B).  
-**Standard Quiz Format:** 3 open-ended proof questions (34 points each, total 102 points with bonus).
+**Exam Policy:** 3 Term Quizzes ($\approx$ 4 Homeworks / 4 Weeks of Lectures & Recitations each) + Final Exam (Moed A / B).  
+**Standard Quiz Format (2026/2027):** 90 minutes. Consists of **5 multiple-choice questions** (single correct answer each, testing Lectures & Recitations, 15 pts each = 75 pts) + **1 open-ended proof question** based directly on the Homework exercises (25 pts, total 100 points). *(Legacy 2025/2026 format: 3 open questions $\times$ 34 pts).*
 
 ---
 

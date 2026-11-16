@@ -1,6 +1,7 @@
 # Quizzes 2 & 3 Blueprints (HW 05 – HW 13)
 
 This reference outlines the scope, topics, and question formats for **Quiz 2** and **Quiz 3** as the semester progresses.
+- **Format (90 Minutes):** **5 Multiple-Choice Questions** (single correct answer each, 15 pts $\times$ 5 = 75 pts) + **1 Open Proof Question** based on the tier's Homework exercises (25 pts).
 
 ---
 
