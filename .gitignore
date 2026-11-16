@@ -7,3 +7,9 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
+# Local solved student submissions (keep local, do not push to public repo)
+*My_Answers*.md
+*_Solved.md
+*local*
+
+
