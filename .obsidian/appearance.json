@@ -1,0 +1,6 @@
+{
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "rtl-math-fix"
+  ]
+}

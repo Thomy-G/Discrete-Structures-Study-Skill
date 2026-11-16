@@ -28,7 +28,7 @@ When the student initiates a conversation, offer or support four primary modes:
 1. **Full Quiz Simulation (מבחן סימולציה לבוחן אמצע):**
    - Synthesizes an authentic BIU quiz matching the official 2026/2027 course format:
      - **Part A — 5 Multiple-Choice Questions (שאלות אמריקאיות):** 15 points each (75 points total). Each question has 5–6 options with **strictly 1 correct answer** (often including subtle traps or *"אף אחת מהתשובות אינה נכונה"*), testing Lectures & Recitations 1–4 (or 5–8 / 9–13).
-     - **Part B — 1 Open Proof Question (שאלה פתוחה):** 25 points (total 100 points). Directly based on or closely adapted from the tier's Homework exercises (HW 01–04 for Quiz 1; HW 05–08 for Quiz 2; HW 09–13 for Quiz 3).
+     - **Part B — 1 Open Proof Question (שאלה פתוחה):** 25 points (total 100 points). **Must be drawn directly from (or be a close variant of) the actual homework files in `Past_Exams/Homeworks/`** (`Discrete Structures HW 01.md`–`04.md` for Quiz 1; `HW 05.md`–`08.md` for Quiz 2; `HW 09.md`–`13.md` for Quiz 3). In past quizzes, Dr. Filtser literally took a homework problem verbatim or with a slight twist (e.g., HW 02 Q4c $\mathcal{P}(A) \sim \{0,1\}^A$, HW 03 Q6 $\deg(v) < \sqrt{n-1} \implies \operatorname{diam}(G) \ge 3$, or HW 04 Q2 Cantor's diagonalization).
    - Tailored to a specific quiz tier (Quiz 1: Lectures/Recitations/HW 01–04; Quiz 2: 05–08; Quiz 3: 09–13).
    - Duration: 90 minutes (שעה וחצי). Includes Dr. Filtser's 20% "לא יודעים" policy (applies to the open question only; cannot be used on multiple-choice questions).
 2. **Comprehensive Final Exam Simulation (מבחן גמר סמסטריאלי מועד א'/ב'):**
@@ -37,8 +37,8 @@ When the student initiates a conversation, offer or support four primary modes:
    - Integrates cross-module synthesis (e.g., Cardinality + Graphs; Matchings + Planarity; Recurrences + Ramsey).
    - Duration: 3 hours (180 minutes).
 3. **Targeted Homework Drill (תרגול ממוקד תרגילי בית):**
-   - Focuses intensively on specific homework assignments (e.g., *"Drill me on HW 03 and HW 04"*).
-   - Uses parameterized mutations of tricky problem types (e.g., finding bijections, CSB sandwiches, leaf induction, complement graph diameters).
+   - Focuses intensively on specific homework assignments in `Past_Exams/Homeworks/Discrete Structures HW XX.md` (and their official solutions in `Discrete Structures HW XX — Solution.md` and `Past_Exams/Homeworks/PDFs/`).
+   - Uses exact homework questions and quiz-style mutations (since the open question on every quiz is based directly on the homeworks).
 4. **Past Exam / Quiz Reproduction (שחזור בחני ומבחני עבר):**
    - Pulls directly from the archived scans in `Past_Exams/Quizzes/`, `Past_Exams/Final_Exams/`, or homework sets in `Past_Exams/Homeworks/` with exact historical scoring rubrics.
 
@@ -69,7 +69,7 @@ To maintain clean practice records without cluttering the chat window, **always 
    Present clickable file links in the chat:
    - [Questions.md](file:///C:/Users/thomy/University/Discrete%20Structures/Practice_Sessions/<session>/Questions.md)
    - [Answers_Template.md](file:///C:/Users/thomy/University/Discrete%20Structures/Practice_Sessions/<session>/Answers_Template.md)
-   Instruct the user to solve the problems inside `Answers_Template.md` and type **"Review this"** or **"בדוק את התשובות שלי"** when finished.
+   Instruct the user to solve the problems inside `Answers_Template.md` and type **"Review this"** or **"בדוק את התשובות שלי"** when finished. Also provide a link to the English solutions (`Solutions_EN.md`) once unlocked.
 
 ---
 

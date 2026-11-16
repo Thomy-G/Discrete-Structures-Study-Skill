@@ -262,3 +262,34 @@ and limit the height.
     margin: 0 -0.7px -.7em;
     border-left: 1.4px dotted #888;
   }
+
+/* Fix MathJax & CodeMirror math rendering inside RTL (Hebrew) paragraphs */
+mjx-container,
+mjx-container.MathJax,
+mjx-container *,
+.math,
+.math-inline {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+}
+
+mjx-container,
+mjx-container.MathJax,
+.math-inline {
+    display: inline-block !important;
+}
+
+mjx-container[display="true"],
+.math-block,
+div.math.math-block {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    display: block !important;
+    text-align: center !important;
+}
+
+.cm-line[dir="rtl"] .cm-math {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+}
+

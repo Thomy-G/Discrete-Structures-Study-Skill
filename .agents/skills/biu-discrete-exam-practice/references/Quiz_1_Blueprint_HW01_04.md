@@ -11,8 +11,31 @@ This blueprint outlines the exact structural patterns, typical trap conditions, 
     3. **Trees & Bipartite Graphs:** Counting leaves given degree sequences, tree characterizations ($|E| = |V| - 1$), tree centers (Jordan's theorem), bipartite graph characterizations (odd cycles / closed walks).
     4. **Cardinality ($\aleph_0, \aleph, 2^\aleph$):** Determining exact cardinalities of intricate sets (e.g., $\{S \subseteq \mathbb{N} \mid X \Delta S \text{ is finite}\}$, bijections/injections from $\mathbb{N} \to \mathbb{N}$, equivalences with $\mathcal{P}(\mathbb{N})$).
 - **Part B — 1 Open Proof Question (שאלה פתוחה, 25 pts):**
-  - Directly based on (or a close parameterized variation of) a problem from **Homework 1–4**.
-  - May be a single 25-point proof or split into two sub-parts (e.g., 12 + 13 points).
+  - Directly based on (or a slight variation of) a problem from **`Past_Exams/Homeworks/Discrete Structures HW 01.md` through `HW 04.md`**.
+  - **Exact Pool of HW 01–04 Problems (High-Probability Open Question Candidates):**
+    - **From [Discrete Structures HW 01.md](file:///c:/Users/thomy/University/Discrete%20Structures/Past_Exams/Homeworks/Discrete%20Structures%20HW%2001.md):**
+      - **Q1(a):** Prove lexicographic order on $A^n$ is a total order.
+      - **Q1(b):** Equivalence relations on $X = \{1,\dots,10\}$ ordered by number of classes $|X/R_1| < |X/R_2|$ (partial order, not total, min/max elements).
+      - **Q2:** Pigeonhole principle on vertex degrees ($\exists u \neq v, \deg(u) = \deg(v)$).
+      - **Q3:** Tree characterization: $|E| = n-1$ and acyclic $\iff \forall u, v \; \exists!$ simple path.
+      - **Q4(a)-(b):** Full binary rooted tree leaf count $\ell = \frac{n+1}{2}$; Tree with maximum degree $\Delta(T) = k$ has at least $k$ leaves.
+      - **Q5(a)-(c):** Mantel's Theorem ($m \le n^2/4$ for triangle-free graphs on even $n$, extremal graph $K_{n/2, n/2}$, induction for $m = k^2 + 1$).
+    - **From [Discrete Structures HW 02.md](file:///c:/Users/thomy/University/Discrete%20Structures/Past_Exams/Homeworks/Discrete%20Structures%20HW%2002.md):**
+      - **Q1:** Disconnected graph $G \implies$ tight upper bound $\operatorname{diam}(\overline{G}) \le 2$.
+      - **Q2:** Forest with $k$ connected components satisfies $|E| = |V| - k$.
+      - **Q3:** Equipotence under set operations ($A \times B \sim C \times D$ true; $A \setminus B$ and $A \cup B$ false).
+      - **Q4(a)-(d):** Explicit bijections **without CSB**: $(0,1) \sim [0,1]$, $A \times A \sim A^{\{1,2\}}$, $\mathcal{P}(A) \sim \{0,1\}^A$ *(appeared verbatim on 2026 Quiz 1!)*, $[0,1] \sim S^1$.
+      - **Q5(a)-(b):** Disjoint closed disks in $\mathbb{R}^2$ are countable ($\le \aleph_0$ via $\mathbb{Q}^2$ density); disjoint concentric circles can have cardinality $\aleph$.
+    - **From [Discrete Structures HW 03.md](file:///c:/Users/thomy/University/Discrete%20Structures/Past_Exams/Homeworks/Discrete%20Structures%20HW%2003.md):**
+      - **Q1:** Cardinality of $101$-free infinite binary sequences is $\aleph$ (via CSB with $00/11$ blocks).
+      - **Q2:** Tree with maximum degree $\Delta$ has at least $\Delta$ leaves.
+      - **Q3:** $k$-regular disconnected graph with odd $k \implies$ every connected component has an even number of vertices.
+      - **Q5:** Bipartite degree bound $|L| \ge \frac{|R| \cdot d}{\Delta(L)}$ via double-counting edges.
+      - **Q6:** Connected graph with $\forall v, \deg(v) < \sqrt{n-1} \implies \operatorname{diam}(G) \ge 3$ *(appeared verbatim on 2026 Quiz 1!)*.
+      - **Q7:** For $k \ge 2$, every $k$-regular bipartite graph contains **no bridges** (cut-edges).
+    - **From [Discrete Structures HW 04.md](file:///c:/Users/thomy/University/Discrete%20Structures/Past_Exams/Homeworks/Discrete%20Structures%20HW%2004.md):**
+      - **Q1(a)-(e):** Cardinality arithmetic with $|X| = \aleph$: $\mathbb{N} \times X$, $\mathbb{N}^X$, $X^\mathbb{N}$, $\mathcal{P}(\mathbb{N})^X$, $X^{\mathcal{P}(\mathbb{N})}$.
+      - **Q2(a)-(c):** Cantor's Diagonalization: reals in $(0,1)$ without digit $7$ are uncountable; $\mathbb{N}^\mathbb{N}$ is uncountable; $\mathcal{P}_{\text{fin}}(\mathbb{N})$ is countable ($\aleph_0$) and $\mathcal{P}_\infty(\mathbb{N})$ has cardinality $\aleph$ *(a variant on unbounded subsets of $\mathbb{N}$ appeared on 2026 Quiz 1!)*.
   - Supports the 20% *"לא יודעים"* policy on the full open question or a full sub-part.
 
 ---
