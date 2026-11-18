@@ -35,7 +35,13 @@ This blueprint outlines the exact structural patterns, typical trap conditions, 
       - **Q7:** For $k \ge 2$, every $k$-regular bipartite graph contains **no bridges** (cut-edges).
     - **From [Discrete Structures HW 04.md](file:///c:/Users/thomy/University/Discrete%20Structures/Past_Exams/Homeworks/Discrete%20Structures%20HW%2004.md):**
       - **Q1(a)-(e):** Cardinality arithmetic with $|X| = \aleph$: $\mathbb{N} \times X$, $\mathbb{N}^X$, $X^\mathbb{N}$, $\mathcal{P}(\mathbb{N})^X$, $X^{\mathcal{P}(\mathbb{N})}$.
-      - **Q2(a)-(c):** Cantor's Diagonalization: reals in $(0,1)$ without digit $7$ are uncountable; $\mathbb{N}^\mathbb{N}$ is uncountable; $\mathcal{P}_{\text{fin}}(\mathbb{N})$ is countable ($\aleph_0$) and $\mathcal{P}_\infty(\mathbb{N})$ has cardinality $\aleph$ *(a variant on unbounded subsets of $\mathbb{N}$ appeared on 2026 Quiz 1!)*.
+      - **Q2(a)-(d):** Cantor's Diagonalization:
+        - (a) Infinite ternary sequences over $\{0, 1, 2\}$ without consecutive identical digits.
+        - (b) Function space $\mathcal{F} = \{f \in \mathbb{R}^\mathbb{R} \mid f: \mathbb{R} \to (0, 1) \cap \mathbb{Q}\}$.
+        - (c) Unbounded subsets of $\mathbb{N}$ *(appeared on 2026 Quiz 1!)*.
+        - (d) Functions in $\mathbb{R}^\mathbb{R}$ vanishing on all rational numbers ($\forall q \in \mathbb{Q}: f(q) = 0$).
+      - **Q3(a)-(b):** Infinite family of polygons with unique positive area $\ge \epsilon > 0$ is countable ($\le \aleph_0$) via $\mathbb{Q}^2$ density; Family of concentric square boundaries of cardinality $\aleph$.
+      - **Q4:** Mutually disjoint hourglasses ("שעוני חול") in $\mathbb{R}^2$ form a countable set via injection to $\mathbb{Q}^2 \times \mathbb{Q}^2$.
   - Supports the 20% *"לא יודעים"* policy on the full open question or a full sub-part.
 
 ---

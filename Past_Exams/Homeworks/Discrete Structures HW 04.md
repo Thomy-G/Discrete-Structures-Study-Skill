@@ -3,7 +3,7 @@ type: uni_course_assignment
 course: "[[Discrete Structures MOC|Discrete Structures]]"
 course_code: "89-2197"
 assignment_num: 4
-topic: "Cardinality Arithmetic under CH, Cantor's Diagonalization"
+topic: "Cardinality Arithmetic under CH, Cantor's Diagonalization, Geometric Polygons and Hourglasses"
 status: "To Solve"
 solution_file: "[[Discrete Structures HW 04 — Solution]]"
 tags:
@@ -12,13 +12,14 @@ tags:
   - cardinality
   - continuum_hypothesis
   - cantor_diagonalization
+  - geometry_cardinality
 ---
 
 # 📝 Discrete Structures — Homework Assignment 4
 
 > [!info] Assignment Details
-> - **Course:** 89-2197 (Discrete Structures / מבנים בדידים)
-> - **Topics:** Cardinality Arithmetic with the Continuum Hypothesis (CH), Power Set Cardinalities, Cantor's Diagonal Argument Applications, Finite vs. Infinite Subsets of $\mathbb{N}$.
+> - **Course:** 89-2197 (Discrete Structures / מבנים בדידים) — Semester A
+> - **Topics:** Cardinality Arithmetic with the Continuum Hypothesis (CH), Cantor's Diagonal Argument (Sequences, Function Spaces, Unbounded Subsets), Geometric Polygons with Unique $\epsilon$-Area, Disjoint Hourglasses in the Plane.
 > - **Status:** ⏳ Unsolved
 > - **Full Worked Solutions:** [[Discrete Structures HW 04 — Solution|View Complete Step-by-Step Solutions]]
 
@@ -26,15 +27,15 @@ tags:
 
 ### Instructions
 - You may use any theorem proved in lectures or recitations unless explicitly instructed otherwise.
-- For Question 1, you may assume the **Continuum Hypothesis (CH)**: $2^{\aleph_0} = \aleph_1 = \aleph$.
+- For Question 1, you may assume the **Continuum Hypothesis (CH)**.
 
 ---
 
 ## 📌 Question 1: Cardinality Arithmetic under CH
 
 Let $X$ be a set with cardinality of the continuum:
-$$|X| = \aleph = 2^{\aleph_0}$$
-Assuming the Continuum Hypothesis (CH), calculate the exact cardinality of each of the following sets. Provide complete formal justifications for each result:
+$$X \sim \aleph$$
+Assuming the Continuum Hypothesis (CH), calculate the exact cardinality of each of the following sets:
 
 1. **Part (a):** $\mathbb{N} \times X$
 2. **Part (b):** $\mathbb{N}^X = \{f \mid f: X \to \mathbb{N}\}$
@@ -42,40 +43,55 @@ Assuming the Continuum Hypothesis (CH), calculate the exact cardinality of each 
 4. **Part (d):** $\mathcal{P}(\mathbb{N})^X$
 5. **Part (e):** $X^{\mathcal{P}(\mathbb{N})}$
 
-> [!tip]- 💡 Hints & Strategy
-> - Recall standard cardinal arithmetic laws: $(\kappa^\lambda)^\mu = \kappa^{\lambda \cdot \mu}$, $\kappa \le \lambda \implies \kappa^\mu \le \lambda^\mu$, and for infinite cardinals $\max(\kappa, \lambda) = \kappa \cdot \lambda = \kappa + \lambda$.
-> - For (b): Sandwiched between $2^X$ and $(2^{\aleph_0})^X$.
-> - For (c): Rewrite $X^\mathbb{N}$ as $(2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0 \cdot \aleph_0}$.
-> - For (d) & (e): Note that $|\mathcal{P}(\mathbb{N})| = 2^{\aleph_0} = \aleph$.
-
-> [!quote]- ✍️ Solution Workspace
-> 
-
 ---
 
 ## 📌 Question 2: Cantor's Diagonalization Method
 
 Solve each of the following parts using **Cantor's Diagonal Argument**:
 
-### Part (a): Real Numbers Without Digit 7
-Let $S \subset (0, 1)$ be the set of all real numbers in $(0, 1)$ whose decimal expansion contains **no occurrence of the digit 7**:
-$$S = \left\{ x \in (0, 1) \;\middle|\; x = 0.d_1 d_2 d_3 \dots, \; \forall i \in \mathbb{N}: d_i \in \{0, 1, 2, 3, 4, 5, 6, 8, 9\} \right\}$$
-*(To ensure unique decimal expansions, exclude expansions ending in trailing 9s).*
-**Prove using Cantor's diagonalization** that $S$ is **uncountable**.
+### Part (a): Ternary Sequences Without Consecutive Identical Digits
+An infinite ternary sequence is an infinite sequence over $\{0, 1, 2\}$, formally $s \in \{0, 1, 2\}^\mathbb{N}$.
+Let $X$ denote the set of all infinite ternary sequences in which no digit appears twice (or more) in a row:
+$$X = \left\{ s \in \{0, 1, 2\}^\mathbb{N} \;\middle|\; \forall n \in \mathbb{N}: s(n) \ne s(n+1) \right\}$$
+Prove using Cantor's diagonalization that $X$ is **uncountable**.
 
-### Part (b): The Set of Functions $\mathbb{N} \to \mathbb{N}$
-Let $\mathcal{F} = \mathbb{N}^\mathbb{N} = \{f \mid f: \mathbb{N} \to \mathbb{N}\}$ be the set of all functions from the natural numbers to the natural numbers.
-**Prove using Cantor's diagonalization** that $\mathcal{F}$ is **uncountable**.
+### Part (b): Functions from $\mathbb{R}$ to $(0, 1) \cap \mathbb{Q}$
+Define the set:
+$$\mathcal{F} = \left\{ f \in \mathbb{R}^\mathbb{R} \;\middle|\; f: \mathbb{R} \to (0, 1) \cap \mathbb{Q} \right\}$$
+which is the set of all functions from the real numbers to the rational numbers in the open interval $(0, 1)$.
+Prove using Cantor's diagonalization that $\mathcal{F}$ is **uncountable**.
 
-### Part (c): Finite vs. Infinite Subsets of $\mathbb{N}$
-1. Prove that the set of all **finite subsets** of $\mathbb{N}$, denoted $\mathcal{P}_{\text{fin}}(\mathbb{N}) = \{S \subseteq \mathbb{N} \mid |S| < \infty\}$, is **countably infinite** ($|\mathcal{P}_{\text{fin}}(\mathbb{N})| = \aleph_0$).
-2. Conclude the cardinality of the set of all **infinite subsets** of $\mathbb{N}$:
-   $$\mathcal{P}_{\infty}(\mathbb{N}) = \{S \subseteq \mathbb{N} \mid |S| = \infty\}$$
+### Part (c): Unbounded Subsets of $\mathbb{N}$
+A subset $A \subseteq \mathbb{N}$ is called **unbounded (אינה חסומה)** if for every $n \in \mathbb{N}$ there exists an element $n' \in A$ such that $n' > n$.
+Prove using Cantor's diagonalization that the set of all unbounded subsets of $\mathbb{N}$:
+$$\mathcal{U} = \{A \subseteq \mathbb{N} \mid A \text{ is unbounded}\}$$
+is **uncountable**.
 
-> [!tip]- 💡 Hints & Strategy
-> - For (a): Assume $S$ is countable and listed as $x_1, x_2, x_3, \dots$. Construct a diagonal number $y = 0.y_1 y_2 y_3 \dots$ where $y_n \ne 7$ and $y_n \ne$ the $n$-th digit of $x_n$.
-> - For (b): If $\mathcal{F} = \{f_1, f_2, \dots\}$, define $g(n) = f_n(n) + 1$.
-> - For (c): $\mathcal{P}_{\text{fin}}(\mathbb{N}) = \bigcup_{k=0}^\infty \mathcal{P}_k(\mathbb{N})$. A countable union of finite/countable sets is countable. Then use $\mathcal{P}(\mathbb{N}) = \mathcal{P}_{\text{fin}}(\mathbb{N}) \cup \mathcal{P}_{\infty}(\mathbb{N})$.
+### Part (d): Functions Vanishing on All Rationals
+Define the set:
+$$\mathcal{F} = \left\{ f \in \mathbb{R}^\mathbb{R} \;\middle|\; \forall q \in \mathbb{Q}: f(q) = 0 \right\}$$
+Prove using Cantor's diagonalization that $\mathcal{F}$ is **uncountable**.
 
-> [!quote]- ✍️ Solution Workspace
-> 
+---
+
+## 📌 Question 3: Polygons in $\mathbb{R}^2$ with Unique $\epsilon$-Area
+
+Let $A$ be an infinite set of polygons in $\mathbb{R}^2$.
+For each polygon $a' \in A$, suppose that:
+$$a' \not\subseteq \bigcup_{a \in A, \, a \ne a'} a$$
+such that the area of the unique region $\{a'\} \setminus \bigcup_{a \in A, a \ne a'} a$ is strictly greater than some $\epsilon > 0$ for all $a' \in A$ (meaning every polygon has an exclusive area of size at least $\epsilon$ that belongs solely to it).
+
+1. **Part (a):** Prove or disprove: The set $A$ is countably infinite ($|A| \le \aleph_0$).
+2. **Part (b):** Prove or disprove: There exists a set of polygons whose boundaries are mutually pairwise disjoint at every point, of cardinality $\aleph$.
+
+> [!tip] Hint (from worksheet)
+> You may use without proof the density of rational numbers in $\mathbb{R}$: every open interval $(a, b)$ contains a rational $c \in \mathbb{Q}$ such that $a < c < b$. Furthermore, you may assume that inside any region of positive area, one can inscribe a circle.
+
+---
+
+## 📌 Question 4: Disjoint Hourglasses in the Plane
+
+Define an **hourglass ("שעון חול")** as a pair of identical isosceles triangles sharing a common apex (קודקוד משותף) and having parallel bases (בסיסים מקבילים).
+Let $\mathcal{H}$ be an infinite collection of mutually disjoint hourglasses in the plane $\mathbb{R}^2$ (that is, no two distinct hourglasses intersect, though one hourglass may lie entirely inside the open region between the cones of another, as illustrated in the figure).
+
+Prove that the cardinality of $\mathcal{H}$ is **countable** ($|\mathcal{H}| \le \aleph_0$).
